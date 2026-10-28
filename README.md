@@ -71,7 +71,7 @@ usan los documentos seleccionados y no incorporan historial de conversación.
 - Internet para la instalación, la primera descarga de modelos y las consultas a Groq.
 - CPU para el perfil inicial; una GPU NVIDIA compatible es opcional para CUDA.
 
-Desde la raíz de `sisecmonitor`, entrar al proyecto:
+Desde la carpeta que contiene el proyecto, entrar a `multiagents`:
 
 ```powershell
 cd multiagents
