@@ -353,9 +353,6 @@ Las pruebas se ejecutan con acceso a modelos sin conexión y también comprueban
 fragmentación larga, conservación del final del documento, prefijos E5,
 normalización y recuperación semántica básica en español.
 
-La [verificación de la actualización](docs/python312-upgrade.md) incluye los
-resultados y los avisos de seguridad que permanecen en Pillow y ChromaDB.
-
 ## Actualizar y exportar requisitos
 
 Editar las dependencias directas en `pyproject.toml`, resolver y validar:
@@ -379,7 +376,3 @@ Con pip y un entorno Python 3.12, se pueden instalar con
 `python -m pip install --require-hashes -r requirementsCPU.txt` o el archivo
 CUDA correspondiente. El formato requirements exporta los índices de forma
 global; uv conserva además la selección de índice por paquete y perfil.
-
-El [análisis de dependencias](docs/dependency-analysis-2026-10-28.md) conserva
-el diagnóstico previo a la actualización. El estado instalado actual se
-determina con `uv.lock`, el perfil elegido y las comprobaciones anteriores.
