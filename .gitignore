@@ -1,0 +1,53 @@
+# Credenciales y configuracion local (conservar plantillas)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Entornos e interpretes locales (CPU y CUDA)
+.venv*/
+venv/
+env/
+.tools/
+.python/
+
+# Modelos descargados, archivos de Gradio e indices de documentos
+.cache/
+.gradio/
+chroma_db*/
+document_cache*/
+documen_cache/
+
+# Archivos generados por Python y herramientas de desarrollo
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+
+# Logs y archivos temporales
+app.log*
+*.log
+*.log.*
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini

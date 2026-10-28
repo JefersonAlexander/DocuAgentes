@@ -1,0 +1,35 @@
+{
+  "python": "3.12.16",
+  "default_model": "intfloat/multilingual-e5-small",
+  "alternative_model": "BAAI/bge-m3",
+  "installed_distributions_checked": 194,
+  "dependencies": {
+    "langchain-huggingface": "1.2.3",
+    "sentence-transformers": "6.2.0",
+    "transformers": "5.21.0",
+    "torch": "2.14.1+cpu"
+  },
+  "tests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "real_embedding": {
+    "dimensions": 384,
+    "normalized": true,
+    "basic_spanish_retrieval": "passed"
+  },
+  "synthetic_long_document": {
+    "paragraph_procedures": 500,
+    "chunks": 14,
+    "head_and_tail_preserved": true,
+    "token_limits": "passed"
+  },
+  "lock_check": "passed",
+  "cuda_dry_run": "passed",
+  "not_exercised": [
+    "BGE-M3 real inference",
+    "GPU runtime",
+    "Groq API",
+    "PDF model inference"
+  ]
+}
