@@ -333,23 +333,6 @@ Las carpetas `.venv/`, `.venv-cuda/`, `.cache/`, `.gradio/`, `chroma_db*/`,
 contiene material de consulta para mantenimiento y no es necesario para ejecutar
 la aplicación. Los dos PDF usados como ejemplos se encuentran en la raíz del proyecto.
 
-## Datos de la versión anterior
-
-La búsqueda local usa por defecto `chroma_db_local/` y `document_cache_local/`.
-Las carpetas de las versiones anteriores se conservan. Cada conjunto de documentos
-tiene su propia colección Chroma, identificada por contenido, fuentes, modelo y
-tamaños de fragmento. Las consultas usan exclusivamente los archivos seleccionados;
-los documentos cargados anteriormente no se mezclan. Recargar el mismo conjunto
-reutiliza su índice sin duplicar fragmentos. La caché de conversión se conserva por
-contenido y configuración de fragmentación. Se pueden cambiar las carpetas con
-`CHROMA_DB_PATH` y `CACHE_DIR` en `.env`.
-
-Al cambiar los archivos se limpian la respuesta, la verificación y el buscador de
-la sesión. Si una nueva carga falla, se muestra el error y no se consulta el documento
-anterior. Reiniciar la aplicación tras actualizar el código; no es necesario borrar
-las bases anteriores. El [análisis del aislamiento de documentos](docs/document-isolation.md)
-describe la causa y las pruebas de regresión.
-
 ## Verificación
 
 ```powershell
